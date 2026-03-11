@@ -13,7 +13,7 @@ import java.util.Scanner;
 public class proyectofinaldata {
 public static void main(String [] args){ 
     String cliente;   
-    double compra1,compra2,compra3,totalc,promedioc;
+    double compra1,compra2,compra3,totalc,promedioc,resta;
     Scanner lectura=new Scanner(System.in);
     System.out.print("Ingrese el nombre del cliente:");
     cliente=lectura.next();
@@ -26,9 +26,10 @@ public static void main(String [] args){
     // proceso de datos
     totalc=compra1+compra2+compra3;
     promedioc=totalc/3;
-    
+    resta=compra2-compra1;
     //salida de datos
     System.out.println("El total de compras es:" +totalc);
+    System.out.println("La resta es:" +resta);
     System.out.println("El promedio de compras es:" +promedioc);
   
 }
